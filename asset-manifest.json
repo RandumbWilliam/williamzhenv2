@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/williamzhenv2/static/js/main.1abcd5fd.chunk.js",
+    "main.js.map": "/williamzhenv2/static/js/main.1abcd5fd.chunk.js.map",
+    "runtime-main.js": "/williamzhenv2/static/js/runtime-main.1bdf444d.js",
+    "runtime-main.js.map": "/williamzhenv2/static/js/runtime-main.1bdf444d.js.map",
+    "static/js/2.3a586463.chunk.js": "/williamzhenv2/static/js/2.3a586463.chunk.js",
+    "static/js/2.3a586463.chunk.js.map": "/williamzhenv2/static/js/2.3a586463.chunk.js.map",
+    "index.html": "/williamzhenv2/index.html",
+    "static/js/2.3a586463.chunk.js.LICENSE.txt": "/williamzhenv2/static/js/2.3a586463.chunk.js.LICENSE.txt",
+    "static/media/background.354e11ae.png": "/williamzhenv2/static/media/background.354e11ae.png",
+    "static/media/dabi.a45b9d01.jpeg": "/williamzhenv2/static/media/dabi.a45b9d01.jpeg",
+    "static/media/grandandtoy.c6c65f16.png": "/williamzhenv2/static/media/grandandtoy.c6c65f16.png",
+    "static/media/hero.6a532505.png": "/williamzhenv2/static/media/hero.6a532505.png",
+    "static/media/immunesystem.d1e89963.jpg": "/williamzhenv2/static/media/immunesystem.d1e89963.jpg",
+    "static/media/logo.371f735f.png": "/williamzhenv2/static/media/logo.371f735f.png",
+    "static/media/missing.16dfdee4.gif": "/williamzhenv2/static/media/missing.16dfdee4.gif",
+    "static/media/profile.ba0e4b6b.png": "/williamzhenv2/static/media/profile.ba0e4b6b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1bdf444d.js",
+    "static/js/2.3a586463.chunk.js",
+    "static/js/main.1abcd5fd.chunk.js"
+  ]
+}
