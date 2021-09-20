@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import GlobalStyle from './globalStyles';
+import NavBar from './components/Navbar';
+import { Background } from './components/common/PageElement';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Experience from './sections/Experience';
+import Works from './sections/Works';
+import Footer from './components/Footer';
+import Banner from './components/Banner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <GlobalStyle />
+      <Banner text="🚧 Website is still under construction! Sorry! 🚧"/>
+      <NavBar />
+      <Hero />
+      <About />
+      <Experience />
+      <Works />
+      <Footer />
+      <Background />
+    </Fragment>
   );
 }
 
