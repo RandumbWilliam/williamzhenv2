@@ -1,27 +1,24 @@
+import Resume from '../../assets/resume.pdf';
+
 export const SocialItems = [
     {
         id: "linkedin",
         icon: "fab fa-linkedin",
-        url: "/about"
+        url: "https://www.linkedin.com/in/william-zhen/"
     },
     {
         id: "github",
         icon: "fab fa-github-alt",
-        url: "/about"
+        url: "https://github.com/RandumbWilliam"
     },
     {
         id: "email",
         icon: "fas fa-envelope",
-        url: "/about"
-    },
-    {
-        id: "phone",
-        icon: "fas fa-phone",
-        url: "/about"
+        url: "mailto:w2zhen@uwaterloo.ca"
     },
     {
         id: "resume",
         text: "Resume",
-        url: "/about"
+        url: Resume
     },
 ]

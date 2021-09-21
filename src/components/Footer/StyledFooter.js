@@ -1,12 +1,6 @@
 import styled from "styled-components";
 import Col from 'react-bootstrap/Col';
 
-export const Bar = styled.div`
-  border-left: 2px solid #7c8ba1;
-  height: auto;
-  margin: 0 15px;
-`
-
 export const Foot = styled.footer`
   display: flex;
   align-items: center;

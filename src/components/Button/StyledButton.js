@@ -27,6 +27,12 @@ export const Btn = styled.button`
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
     cursor: ${props => props.disabled ? `default` : `pointer`};
 
+    &:focus {
+        outline: 0;
+        outline-color: transparent;
+        outline-style: none;
+    }
+
     ${props => 
         props.disabled ? 
             `border: none;

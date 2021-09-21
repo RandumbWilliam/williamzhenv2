@@ -3,8 +3,7 @@ import {
     WorksCardContainer, 
     WorksCardTopBanner, 
     WorksCardBanner, 
-    WorksContent,
-    WorksCardText, 
+    WorksContent, 
     WorksTitle, 
     WorksDescription,
     WorksTagsContainer,
@@ -23,7 +22,7 @@ const WorksCard = ({title, banner, description, tags}) => {
                 <WorksDescription>{description}</WorksDescription>
                 <WorksTagsContainer>
                     {tags.map((tag, key) => (
-                        <WorksTags>{tag}</WorksTags>
+                        <WorksTags key={key}>{tag}</WorksTags>
                     ))}
                 </WorksTagsContainer>
             </WorksContent>

@@ -19,7 +19,7 @@ const Works = () => {
         if (active === "everything") {
             setFilteredWorksItems(WorksItems)
         } else {
-            setFilteredWorksItems(WorksItems.filter((item) => {return (item.id === active)}))
+            setFilteredWorksItems(WorksItems.filter((item) => {return (item.filter === active)}))
         }
     }, [active])
 
@@ -37,12 +37,12 @@ const Works = () => {
                 <Row>
                     {filteredWorksItems.length === 0 ?
                         <Col style={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", height: "300px"}}>
-                            <img src={Missing} width={200}/>
+                            <img src={Missing} width={200} alt="missing-bugcat"/>
                             <h1>I'M SORRY! WILL HAVE SOME SOON!</h1>
                         </Col>
                     :
                         <>
-                        {filteredWorksItems.map((item) => (
+                        {filteredWorksItems.map((item, key) => (
                             <WorksCard 
                                 key={item.id}
                                 title={item.title}

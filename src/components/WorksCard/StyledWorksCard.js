@@ -34,13 +34,6 @@ export const WorksCardBanner = styled.figure`
     }
 `
 
-export const WorksCardText = styled.div`
-    z-index: 3;
-    position: absolute;
-    transform: translateY(185px);
-    transition: all 0.3s ease;
-`
-
 export const WorksTitle = styled.p`
     font-size: 1rem;
     color: #000;

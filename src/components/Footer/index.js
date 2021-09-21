@@ -1,12 +1,10 @@
 import React from 'react';
 import { 
-    Bar,
     Foot, 
     FooterLogo, 
     FooterMenu, 
     FooterCenterCol, 
     FooterLink, 
-    FooterA, 
     FooterCopyright 
 } from './StyledFooter';
 import { Container, Row } from 'react-bootstrap';

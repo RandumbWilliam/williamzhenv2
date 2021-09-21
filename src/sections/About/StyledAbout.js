@@ -26,3 +26,21 @@ export const AboutSocialButtons = styled.div`
     display: flex;
     flex-direction: row;
 `
+
+export const AboutSocialBtn = styled.a`
+    &&& {
+        padding: 10px 14px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        background: #00BCEF;
+        cursor: pointer;
+        margin: 0 0.8rem;
+        box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+`
