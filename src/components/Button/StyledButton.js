@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const BtnText = styled.span`
-    ${props => 
+    ${props =>
         props.disabled ?
             `color: #ABABAB`
-        :
-            props.fill ? 
+            :
+            props.fill ?
                 `color: #fff;
                 `
-            :
+                :
                 `background-image: linear-gradient(to right, #2f8ae1, #1861a6);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -33,14 +33,14 @@ export const Btn = styled.button`
         outline-style: none;
     }
 
-    ${props => 
-        props.disabled ? 
+    ${props =>
+        props.disabled ?
             `border: none;
             padding: 1.0rem 1.8rem;
             background: #EEEEEE;
             `
-        :
-            props.fill ? 
+            :
+            props.fill ?
                 `border: none;
                 padding: 1.0rem 1.8rem;
                 background-size: 200% auto;
@@ -50,7 +50,7 @@ export const Btn = styled.button`
                     background-position: right center;
                 }
                 `
-            :
+                :
                 `padding: 0.9rem 1.6rem;
                 border: double 2px transparent;
                 background-image: linear-gradient(white, white), linear-gradient(to right, #2f8ae1, #1861a6);
@@ -85,7 +85,7 @@ export const Btn = styled.button`
                 `
     }
 
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border-width: 0.2rem;
     border-radius: 0.8rem;
 `

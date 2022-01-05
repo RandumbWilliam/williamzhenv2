@@ -1,6 +1,7 @@
-import styled from 'styled-components';
-import {Row, Col} from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import styled from 'styled-components';
+import { DEFAULT_FONT_SIZE } from '../Common/StyleElement';
 
 export const FormContainer = styled(Form)`
     display: flex;
@@ -21,9 +22,9 @@ export const FormContact = styled(Col)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: ${DEFAULT_FONT_SIZE};
 `
 
 export const FormBtn = styled(Row)`
-    margin: 3rem 0;
+    margin: 1.5rem 0;
 `

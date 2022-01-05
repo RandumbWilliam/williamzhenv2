@@ -1,5 +1,6 @@
-import styled from 'styled-components';
 import Col from 'react-bootstrap/Col';
+import styled from 'styled-components';
+import { DEFAULT_FONT_SIZE } from '../../components/Common/StyleElement';
 
 export const AboutCol = styled(Col)`
     display: flex;
@@ -19,7 +20,7 @@ export const ProfilePicture = styled.img`
 
 export const AboutText = styled.p`
     font-weight: 500;
-    font-size: 1.0rem;
+    font-size: ${DEFAULT_FONT_SIZE};
 `
 
 export const AboutSocialButtons = styled.div`

@@ -51,9 +51,12 @@ export const FooterLink = styled.a`
   font-weight: 500;
   margin: 0 2.4rem;
   transition-duration: 300ms;
+  cursor: pointer;
+  color: #000;
   i {
+    transition: all 0.3s ease-in;
     &:hover {
-      color: #243e63 ;
+      color: #2f8ae1 ;
     };
   }
 `

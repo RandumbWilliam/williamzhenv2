@@ -1,5 +1,6 @@
+import { Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
-import {Row, Col} from 'react-bootstrap';
+import { DEFAULT_FONT_SIZE } from '../Common/StyleElement';
 
 export const ExperienceRow = styled(Row)`
     margin: 5rem;
@@ -36,7 +37,7 @@ export const ExperienceDate = styled.p`
 `
 
 export const ExperienceDescription = styled.p`
-    font-size: 1rem;
+    font-size: ${DEFAULT_FONT_SIZE};
     font-weight: 500;
     margin: 1.3rem 0;
 `

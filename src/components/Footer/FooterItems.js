@@ -2,21 +2,16 @@ export const FooterItems = [
     {
         id: "linkedin",
         icon: "fab fa-linkedin",
-        url: "/about"
+        href: "https://www.linkedin.com/in/william-zhen/"
     },
     {
         id: "github",
         icon: "fab fa-github-alt",
-        url: "/about"
+        href: "https://github.com/RandumbWilliam"
     },
     {
         id: "email",
         icon: "fas fa-envelope",
-        url: "/about"
-    },
-    {
-        id: "phone",
-        icon: "fas fa-phone",
-        url: "/about"
+        href: "/about"
     },
 ]

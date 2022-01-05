@@ -1,4 +1,4 @@
-import { Section, Title } from '../../components/common/PageElement';
+import { Section, Title } from '../../components/Common/PageElement';
 import { Container } from 'react-bootstrap';
 import ExperienceCard from '../../components/ExperienceCard';
 import {ExperienceItems} from './ExperienceItems';

@@ -1,5 +1,5 @@
-import styled, {keyframes} from 'styled-components';
 import Col from 'react-bootstrap/Col';
+import styled, { keyframes } from 'styled-components';
 
 const float = keyframes`
 	0% {
@@ -63,6 +63,6 @@ export const HeroParagraph = styled.p`
 export const HeroCredit = styled.p`
     font-weight: 500;
     font-size: 0.8rem;
-    color: #d3d3d3;
+    color: #fff;
     text-align: center;
 `

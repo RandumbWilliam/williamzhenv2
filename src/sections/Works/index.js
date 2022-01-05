@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Section, Title } from '../../components/common/PageElement';
+import { Section, Title } from '../../components/Common/PageElement';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
     WorksFilterBtnsContainer,
