@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/williamzhenv2/static/css/main.2a7565c4.chunk.css",
-    "main.js": "/williamzhenv2/static/js/main.e0166f82.chunk.js",
-    "main.js.map": "/williamzhenv2/static/js/main.e0166f82.chunk.js.map",
+    "main.js": "/williamzhenv2/static/js/main.7f5c644f.chunk.js",
+    "main.js.map": "/williamzhenv2/static/js/main.7f5c644f.chunk.js.map",
     "runtime-main.js": "/williamzhenv2/static/js/runtime-main.1bdf444d.js",
     "runtime-main.js.map": "/williamzhenv2/static/js/runtime-main.1bdf444d.js.map",
-    "static/js/2.e545b8d5.chunk.js": "/williamzhenv2/static/js/2.e545b8d5.chunk.js",
-    "static/js/2.e545b8d5.chunk.js.map": "/williamzhenv2/static/js/2.e545b8d5.chunk.js.map",
+    "static/js/2.0ae82793.chunk.js": "/williamzhenv2/static/js/2.0ae82793.chunk.js",
+    "static/js/2.0ae82793.chunk.js.map": "/williamzhenv2/static/js/2.0ae82793.chunk.js.map",
     "index.html": "/williamzhenv2/index.html",
     "static/css/main.2a7565c4.chunk.css.map": "/williamzhenv2/static/css/main.2a7565c4.chunk.css.map",
-    "static/js/2.e545b8d5.chunk.js.LICENSE.txt": "/williamzhenv2/static/js/2.e545b8d5.chunk.js.LICENSE.txt",
+    "static/js/2.0ae82793.chunk.js.LICENSE.txt": "/williamzhenv2/static/js/2.0ae82793.chunk.js.LICENSE.txt",
     "static/media/background.0087d62d.png": "/williamzhenv2/static/media/background.0087d62d.png",
     "static/media/dabi.a45b9d01.jpeg": "/williamzhenv2/static/media/dabi.a45b9d01.jpeg",
     "static/media/grandandtoy.c6c65f16.png": "/williamzhenv2/static/media/grandandtoy.c6c65f16.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1bdf444d.js",
-    "static/js/2.e545b8d5.chunk.js",
+    "static/js/2.0ae82793.chunk.js",
     "static/css/main.2a7565c4.chunk.css",
-    "static/js/main.e0166f82.chunk.js"
+    "static/js/main.7f5c644f.chunk.js"
   ]
 }
