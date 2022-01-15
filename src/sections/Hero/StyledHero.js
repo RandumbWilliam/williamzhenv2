@@ -63,6 +63,6 @@ export const HeroParagraph = styled.p`
 export const HeroCredit = styled.p`
     font-weight: 500;
     font-size: 0.8rem;
-    color: #fff;
+    color: #ccc;
     text-align: center;
 `
