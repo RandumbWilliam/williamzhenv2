@@ -18,8 +18,8 @@ export const Section = styled.section`
     display: flex;
     ${props => props.center ?
     `justify-content: center;
-            align-items: center;
-            `
+      align-items: center;
+      `
     :
     `padding-top: 120px;`
   }

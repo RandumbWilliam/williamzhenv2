@@ -1,25 +1,18 @@
 import {
-    ExperienceLogo,
-    ExperienceName,
-    ExperienceLocation,
-    ExperienceTitle,
-    ExperienceDate,
-    ExperienceDescription,
-    ExperienceTags,
-    ExperienceTagContainer,
-    ExperienceRow,
-    ExperienceCol
+    ExperienceCol, ExperienceDate,
+    ExperienceDescription, ExperienceLocation, ExperienceLogo,
+    ExperienceName, ExperienceRow, ExperienceTagContainer, ExperienceTags, ExperienceTitle
 } from './StyledExperienceCard';
 
-const ExperienceCard = ({logo, name, location, title, date, description, tags}) => {
+const ExperienceCard = ({ logo, name, location, title, date, description, tags }) => {
     return (
         <ExperienceRow>
-            <ExperienceCol md={{span: 3, offset: 1}} align="center">
+            <ExperienceCol md={{ span: 3, offset: 1 }} xs={12} align="center">
                 <ExperienceLogo src={logo} />
                 <ExperienceName>{name}</ExperienceName>
                 <ExperienceLocation>{location}</ExperienceLocation>
             </ExperienceCol>
-            <ExperienceCol md={7} align="left">
+            <ExperienceCol md={7} xs={12} align="left">
                 <ExperienceTitle>{title}</ExperienceTitle>
                 <ExperienceDate>{date}</ExperienceDate>
                 <ExperienceDescription>{description}</ExperienceDescription>

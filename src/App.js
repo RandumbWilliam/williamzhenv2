@@ -1,15 +1,14 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import Banner from './components/Banner';
 import Loading from './components/Common/Loading';
 import { Background } from './components/Common/PageElement';
 import Footer from './components/Footer';
-import NavBar from './components/Navbar';
+import Navbar from './components/Navbar';
 import GlobalStyle from './globalStyles';
 import About from './sections/About';
 import Experience from './sections/Experience';
 import Hero from './sections/Hero';
 import Works from './sections/Works';
-
+import { MenuProvider } from "./state";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -18,7 +17,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 8000)
+    }, 3000)
   }, [])
 
   return (
@@ -28,8 +27,9 @@ function App() {
         :
         <>
           <GlobalStyle />
-          <Banner text="🚧 Website is still under construction! Sorry! 🚧" />
-          <NavBar />
+          <MenuProvider>
+            <Navbar />
+          </MenuProvider>
           <Hero />
           <About />
           <Experience />

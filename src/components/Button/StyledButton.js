@@ -1,91 +1,65 @@
 import styled from 'styled-components';
-
-export const BtnText = styled.span`
-    ${props =>
-        props.disabled ?
-            `color: #ABABAB`
-            :
-            props.fill ?
-                `color: #fff;
-                `
-                :
-                `background-image: linear-gradient(to right, #2f8ae1, #1861a6);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                `
-    }
-`
+import { device } from '../../globalStyles';
+import { DEFAULT_FONT_SIZE, PRIMARY_COLOR, SECONDARY_COLOR, SM_FONT_SIZE, WHITE_COLOR, XS_FONT_SIZE } from '../Common/StyleElement';
 
 export const Btn = styled.button`
-    display: inline-block;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    font-weight: bold;
-    line-height: 1;
-    z-index: 1;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-    cursor: ${props => props.disabled ? `default` : `pointer`};
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, ${PRIMARY_COLOR} 0, ${SECONDARY_COLOR} 100%);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: ${WHITE_COLOR};
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  &:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
+  }
+  &:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, ${WHITE_COLOR} 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: ${PRIMARY_COLOR} 0 3px 7px inset;
+    transform: translateY(2px);
+  }
 
-    &:focus {
-        outline: 0;
-        outline-color: transparent;
-        outline-style: none;
+  @media ${device.xs} {
+        height: 36px;
+        font-size: ${XS_FONT_SIZE};
     }
 
-    ${props =>
-        props.disabled ?
-            `border: none;
-            padding: 1.0rem 1.8rem;
-            background: #EEEEEE;
-            `
-            :
-            props.fill ?
-                `border: none;
-                padding: 1.0rem 1.8rem;
-                background-size: 200% auto;
-                background-image: linear-gradient(to right, #2f8ae1 0%, #1861a6 51%, #2f8ae1 100%);
-                
-                &:hover {
-                    background-position: right center;
-                }
-                `
-                :
-                `padding: 0.9rem 1.6rem;
-                border: double 2px transparent;
-                background-image: linear-gradient(white, white), linear-gradient(to right, #2f8ae1, #1861a6);
-                background-origin: border-box;
-                background-clip: padding-box, border-box;
-                
-                &:after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 0;
-                    height: 100%;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    z-index: -1;
-                    z-index: -10;
-                    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-                    background-image: linear-gradient(to right, #2f8ae1, #1861a6);
-                }
-
-                &:hover {
-                    &:after {
-                        width: 101%;
-                    }
-                }
-
-                &:hover ${BtnText} {
-                    -webkit-text-fill-color: #fff;
-                    text-decoration: none;
-                }
-                `
+  @media ${device.sm} {
+        height: 38px;
+        font-size: ${XS_FONT_SIZE};
     }
 
-    font-size: 1.2rem;
-    border-width: 0.2rem;
-    border-radius: 0.8rem;
+  @media ${device.md} {
+        height: 42px;
+        font-size: ${SM_FONT_SIZE};
+    }
+
+    @media ${device.lg} {
+        height: 48px;
+        font-size: ${DEFAULT_FONT_SIZE};
+    }
 `

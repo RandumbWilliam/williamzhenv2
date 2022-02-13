@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
+import { Container, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import HeroImg from '../../assets/hero.png';
 import Button from '../../components/Button';
 import { Section } from '../../components/Common/PageElement';
-import ContactForm from '../../components/ContactForm';
 import './CustomModal.css';
 import {
     HeroCol, HeroCredit, HeroImage, HeroIntro,
@@ -25,10 +23,10 @@ const Hero = () => {
 
     return (
         <>
-            <Section id="hero" center>
-                <Container>
+            <Section id="hero" height="full" center background>
+                <Container style={{ paddingTop: "60px" }}>
                     <Row>
-                        <HeroCol md={4}>
+                        <HeroCol lg={4} sm={6} xs={12}>
                             <Fade left duration={1000} delay={600} distance="30px">
                                 <HeroText>
                                     <HeroIntro>Hey there! I'm</HeroIntro>
@@ -36,10 +34,10 @@ const Hero = () => {
                                     <HeroSubtitle uppercase>Engineer + Developer</HeroSubtitle>
                                     <HeroParagraph>I'm design minded and like to craft solid and scaleable products</HeroParagraph>
                                 </HeroText>
-                                <Button onClick={() => handleShow()}>Contact Me</Button>
+                                <Button onClick={() => handleShow()}>Get in Touch</Button>
                             </Fade>
                         </HeroCol>
-                        <HeroCol md={{ span: 6, offset: 2 }}>
+                        <HeroCol lg={{ span: 6, offset: 2 }} sm={6} xs={12}>
                             <Fade right duration={1000} delay={600} distance="30px">
                                 <HeroImage>
                                     <img src={HeroImg} alt="HeroImage" />
@@ -50,7 +48,7 @@ const Hero = () => {
                     </Row>
                 </Container>
             </Section>
-            <Modal size="lg"
+            {/* <Modal size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
                 show={show}
@@ -70,7 +68,7 @@ const Hero = () => {
                         </Row>
                     </Container>
                 </Modal.Body>
-            </Modal>
+            </Modal> */}
         </>
     );
 }

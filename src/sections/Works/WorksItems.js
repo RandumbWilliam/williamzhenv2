@@ -28,5 +28,5 @@ export const WorksItems = [
         banner: ImmuneSystemPoster,
         images: "",
         tags: ["Photoshop", "Illustrator"]
-    },
+    }
 ]

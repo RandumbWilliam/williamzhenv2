@@ -1,13 +1,31 @@
 import styled from 'styled-components';
+import { device } from '../../globalStyles';
 
 export const WorksCardContainer = styled.div`
     display: flex;
     position: relative;
-    width: 280px;
+    width: 260px;
     height: 350px;
     background: #fff;
     border-radius: 10px;
     box-shadow: inset 0px 0px 0px 1px #edeef4;
+    margin: 10px 10px;
+    @media ${device.xs} {
+        margin: 10px auto;
+        width: 90%;
+    }
+    @media ${device.sm} {
+        margin: 10px auto;
+        width: 340px;
+    }
+    @media ${device.md} {
+        margin: 10px auto;
+        width: 300px;
+    }
+    @media ${device.lg} {
+        margin: 10px auto;
+        width: 260px;
+    }
 `
 
 export const WorksCardTopBanner = styled.span`
@@ -18,7 +36,7 @@ export const WorksCardTopBanner = styled.span`
     border-radius: 10px 10px 0px 0px;
     transition: all 0.4s ease;
     background: linear-gradient(140deg, #2f8ae1 0%, #1861a6);
-    z-index: 5;
+    z-index: 1;
 `
 
 export const WorksCardBanner = styled.figure`
@@ -28,7 +46,7 @@ export const WorksCardBanner = styled.figure`
     top: 10px;
     transition: all 0.4s ease;
     img {
-        width: 280px;
+        width: 260px;
         height: 180px;
         object-fit: cover;
     }

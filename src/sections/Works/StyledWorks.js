@@ -1,5 +1,5 @@
+import { Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
-import {Row, Col} from 'react-bootstrap';
 
 export const WorksFilterBtnsContainer = styled(Row)`
     margin: 5rem 0;
@@ -25,11 +25,11 @@ export const WorksBtn = styled.button`
         outline: none;
         transition: all 0.3s ease-in;
         ${props => props.active ?
-            `background: #00BCEF;
+        `background: #00BCEF;
             color: #fff;
             `
         :
-            `color: #000;
+        `color: #000;
             transition-duration: 300ms;
             &::after {
                 content: "";
@@ -48,6 +48,6 @@ export const WorksBtn = styled.button`
                 background: #000;
             }
             `
-        }
+    }
     }
 `

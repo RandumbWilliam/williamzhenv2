@@ -1,9 +1,13 @@
 import { Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
-import { DEFAULT_FONT_SIZE } from '../Common/StyleElement';
+import { device } from '../../globalStyles';
+import { DEFAULT_FONT_SIZE, SM_FONT_SIZE } from '../Common/StyleElement';
 
 export const ExperienceRow = styled(Row)`
     margin: 5rem;
+    @media ${device.xs} {
+        margin: 5rem 1rem;
+    }
 `
 
 export const ExperienceCol = styled(Col)`
@@ -11,6 +15,9 @@ export const ExperienceCol = styled(Col)`
     justify-content: center;
     align-items: ${props => props.align};
     flex-direction: column;
+    @media ${device.xs} {
+        text-align: center;
+    }
 `
 
 export const ExperienceLogo = styled.img`
@@ -40,6 +47,9 @@ export const ExperienceDescription = styled.p`
     font-size: ${DEFAULT_FONT_SIZE};
     font-weight: 500;
     margin: 1.3rem 0;
+    @media ${device.xs} {
+        font-size: ${SM_FONT_SIZE}
+    }
 `
 
 export const ExperienceTagContainer = styled.div``
