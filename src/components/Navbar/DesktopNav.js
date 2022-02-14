@@ -17,7 +17,7 @@ const DesktopNavbar = () => {
         <img src={Logo} alt="logo" style={{ width: "60px", height: "auto" }} />
       </Link>
       <NavLinks />
-      <Hamburger toggled={isMenuOpen} toggle={toggleMenu} duration={0} />
+      <Hamburger toggled={isMenuOpen} toggle={toggleMenu} duration={0.2} />
     </DesktopNav>
   );
 };
@@ -30,14 +30,12 @@ const DesktopNav = styled.nav`
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  padding: 0 180px;
   transition: all 150ms linear;
   ${(props) =>
     props.isScrolled &&
     css`
       background: #1c1c1c;
       box-shadow: rgba(0, 0, 0, 0.8) 0 1px 4px;
-      padding: 0 200px;
     `}
   position: fixed;
   top: 0;
@@ -45,16 +43,21 @@ const DesktopNav = styled.nav`
   width: 100%;
   height: 64px;
   z-index: 2;
-  @media screen and (max-width: 768px) {
-    justify-content: space-between;
-    padding: 0 60px;
-  }
-
   @media ${device.xs} {
     padding: 0 10px;
   }
   @media ${device.sm} {
     padding: 0 60px;
+  }
+  @media ${device.md} {
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+  @media ${device.lg} {
+    padding: 0 60px;
+  }
+  @media ${device.xl} {
+    padding: 0 180px;
   }
   .logo {
     flex: 2;

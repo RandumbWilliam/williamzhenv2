@@ -49,10 +49,10 @@ const About = () => {
                         <AboutCol md={5} xs={12}>
                             <Title align="left">About Me</Title>
                             <AboutText>
-                                Hello! I am a third year Nanotechnology Engineering student taking the Computing Option at
+                                Hello! I am a Nanotechnology Engineering student taking the Computing Option at
                                 the University of Waterloo. My main area of interest and focus is in nanoelectronics and
-                                nanobiotechnology. I am a designer and developer who enjoys building and desiging scalable
-                                products with great user experience.
+                                software development. I am a designer and developer who enjoys building and desiging scalable
+                                products with a great user experience.
                                 <br></br>
                                 <br></br>
                                 During my free time, I enjoy skateboarding, fitness training, and doing art. I am always
