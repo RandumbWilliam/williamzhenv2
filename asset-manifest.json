@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/williamzhenv2/static/css/main.2a7565c4.chunk.css",
-    "main.js": "/williamzhenv2/static/js/main.b1e71b78.chunk.js",
-    "main.js.map": "/williamzhenv2/static/js/main.b1e71b78.chunk.js.map",
+    "main.js": "/williamzhenv2/static/js/main.1b91eae6.chunk.js",
+    "main.js.map": "/williamzhenv2/static/js/main.1b91eae6.chunk.js.map",
     "runtime-main.js": "/williamzhenv2/static/js/runtime-main.1bdf444d.js",
     "runtime-main.js.map": "/williamzhenv2/static/js/runtime-main.1bdf444d.js.map",
     "static/css/2.afe59bbf.chunk.css": "/williamzhenv2/static/css/2.afe59bbf.chunk.css",
-    "static/js/2.20edba5c.chunk.js": "/williamzhenv2/static/js/2.20edba5c.chunk.js",
-    "static/js/2.20edba5c.chunk.js.map": "/williamzhenv2/static/js/2.20edba5c.chunk.js.map",
+    "static/js/2.62c9cb68.chunk.js": "/williamzhenv2/static/js/2.62c9cb68.chunk.js",
+    "static/js/2.62c9cb68.chunk.js.map": "/williamzhenv2/static/js/2.62c9cb68.chunk.js.map",
     "index.html": "/williamzhenv2/index.html",
     "static/css/2.afe59bbf.chunk.css.map": "/williamzhenv2/static/css/2.afe59bbf.chunk.css.map",
-    "static/css/main.2a7565c4.chunk.css.map": "/williamzhenv2/static/css/main.2a7565c4.chunk.css.map",
-    "static/js/2.20edba5c.chunk.js.LICENSE.txt": "/williamzhenv2/static/js/2.20edba5c.chunk.js.LICENSE.txt",
+    "static/js/2.62c9cb68.chunk.js.LICENSE.txt": "/williamzhenv2/static/js/2.62c9cb68.chunk.js.LICENSE.txt",
+    "static/media/aligndx-thumbnail.df2ac94e.jpg": "/williamzhenv2/static/media/aligndx-thumbnail.df2ac94e.jpg",
     "static/media/background.0087d62d.png": "/williamzhenv2/static/media/background.0087d62d.png",
     "static/media/grandandtoy.c6c65f16.png": "/williamzhenv2/static/media/grandandtoy.c6c65f16.png",
     "static/media/hero.6a532505.png": "/williamzhenv2/static/media/hero.6a532505.png",
-    "static/media/immunesystem.d1e89963.jpg": "/williamzhenv2/static/media/immunesystem.d1e89963.jpg",
+    "static/media/immune-thumbnail.0479dc2f.jpg": "/williamzhenv2/static/media/immune-thumbnail.0479dc2f.jpg",
     "static/media/logo.371f735f.png": "/williamzhenv2/static/media/logo.371f735f.png",
     "static/media/missing.16dfdee4.gif": "/williamzhenv2/static/media/missing.16dfdee4.gif",
     "static/media/profile.7e9a6bd4.jpg": "/williamzhenv2/static/media/profile.7e9a6bd4.jpg",
-    "static/media/resume.9ed72dea.pdf": "/williamzhenv2/static/media/resume.9ed72dea.pdf"
+    "static/media/questrade.8db6b2be.png": "/williamzhenv2/static/media/questrade.8db6b2be.png",
+    "static/media/randumbbot-thumbnail.00f4573e.jpg": "/williamzhenv2/static/media/randumbbot-thumbnail.00f4573e.jpg",
+    "static/media/resume.9ed72dea.pdf": "/williamzhenv2/static/media/resume.9ed72dea.pdf",
+    "static/media/searchengine-thumbnail.8bb1f437.jpg": "/williamzhenv2/static/media/searchengine-thumbnail.8bb1f437.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1bdf444d.js",
     "static/css/2.afe59bbf.chunk.css",
-    "static/js/2.20edba5c.chunk.js",
-    "static/css/main.2a7565c4.chunk.css",
-    "static/js/main.b1e71b78.chunk.js"
+    "static/js/2.62c9cb68.chunk.js",
+    "static/js/main.1b91eae6.chunk.js"
   ]
 }
