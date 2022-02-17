@@ -30,7 +30,10 @@ const About = () => {
                                 {SocialItems.map((item, key) => {
                                     if (item.id === "email") {
                                         return (
-                                            <AboutSocialBtn key={key} onClick={() => handleShow()}><i class={item.icon}></i></AboutSocialBtn>
+                                            <AboutSocialBtn key={key} onClick={(e) => {
+                                                window.location = "mailto:w2zhen@uwaterloo.ca";
+                                                e.preventDefault();
+                                            }}><i class={item.icon}></i></AboutSocialBtn>
                                         )
                                     } else {
                                         return (

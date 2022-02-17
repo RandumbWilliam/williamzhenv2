@@ -67,9 +67,11 @@ export const AboutSocialBtn = styled.a`
         cursor: pointer;
         margin: 0 0.8rem;
         box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+        transition: box-shadow .15s,transform .15s;
         &:hover {
             text-decoration: none;
             color: #fff;
+            transform: translateY(-2px);
         }
         @media ${device.xs} {
             margin: 0 0.2rem;

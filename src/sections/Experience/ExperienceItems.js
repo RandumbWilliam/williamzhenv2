@@ -1,8 +1,31 @@
 import DoxeyLab from '../../assets/experience/doxeylab.png'
-import ShopperArmy from '../../assets/experience/shopperarmy.png'
 import GrandAndToy from '../../assets/experience/grandandtoy.png'
+import Questrade from '../../assets/experience/questrade.png'
+import ShopperArmy from '../../assets/experience/shopperarmy.png'
 
 export const ExperienceItems = [
+    {
+        id: "questrade",
+        logo: Questrade,
+        name: "Questrade",
+        title: "Web Engineer",
+        location: "Toronto, Ontario (Remote)",
+        date: "Jan. 2022 - Present",
+        description: `Demonstrated adaptability and versatility by taking on various tickets involving 
+        implementing, optimizing, and mainting the internal and external sites of Questrade. Collborated
+        on an online contanct management form to improve customer interactions. Developed robust automation tests
+        and unit tests.`,
+        tags: [
+            "Agile",
+            "Jira",
+            "Angular",
+            "HTML",
+            "CSS/SASS",
+            "JavaScript",
+            "TypeScript",
+            "Protractor",
+        ]
+    },
     {
         id: "doxeylab",
         logo: DoxeyLab,
@@ -16,6 +39,8 @@ export const ExperienceItems = [
         an RNA sequence.`,
         tags: [
             "ReactJS",
+            "MaterialUI",
+            "Bootstrap",
             "Python",
             "Flask",
             "MongoDB",
@@ -31,7 +56,7 @@ export const ExperienceItems = [
         name: "Shopper Army",
         title: "Operations Technician Assistant & Creative Director",
         location: "Toronto, Ontario",
-        date: "Jan. 2020 - Present",
+        date: "Jan. 2020 - Jan. 2022",
         description: `Involved in developing and maintaing the automation scripts for
         daily admin operations and the redesign of the review page. Currently 
         producing high-quality social advertisments for various partners of Shopper Army.`,

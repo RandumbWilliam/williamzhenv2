@@ -34,7 +34,7 @@ const DesktopNav = styled.nav`
   ${(props) =>
     props.isScrolled &&
     css`
-      background: #1c1c1c;
+      background: #2A2B2A;
       box-shadow: rgba(0, 0, 0, 0.8) 0 1px 4px;
     `}
   position: fixed;

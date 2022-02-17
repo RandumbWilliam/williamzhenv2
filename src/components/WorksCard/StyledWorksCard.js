@@ -1,53 +1,35 @@
+import { Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import { device } from '../../globalStyles';
+import { WHITE_COLOR, XS2_FONT_SIZE } from '../Common/StyleElement';
 
-export const WorksCardContainer = styled.div`
-    display: flex;
-    position: relative;
-    width: 260px;
-    height: 350px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 0px 1px #edeef4;
-    margin: 10px 10px;
-    @media ${device.xs} {
-        margin: 10px auto;
-        width: 90%;
-    }
-    @media ${device.sm} {
-        margin: 10px auto;
-        width: 340px;
-    }
-    @media ${device.md} {
-        margin: 10px auto;
-        width: 300px;
-    }
-    @media ${device.lg} {
-        margin: 10px auto;
-        width: 260px;
-    }
+export const WorksCardContainer = styled(Col)`
+    padding: 0.5rem;
 `
 
-export const WorksCardTopBanner = styled.span`
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    top: 0;
-    border-radius: 10px 10px 0px 0px;
-    transition: all 0.4s ease;
-    background: linear-gradient(140deg, #2f8ae1 0%, #1861a6);
-    z-index: 1;
+export const WorksCardWrapper = styled.div`
+    background-color: ${WHITE_COLOR};
+    ${'' /* cursor: pointer; */}
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid #BACDD8;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.025);
+    }
 `
 
 export const WorksCardBanner = styled.figure`
     overflow: hidden;
     z-index: 1;
-    position: absolute;
-    top: 10px;
     transition: all 0.4s ease;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
     img {
-        width: 260px;
-        height: 180px;
+        height: 160px;
+        width: 100%;
         object-fit: cover;
     }
 `
@@ -60,10 +42,8 @@ export const WorksTitle = styled.p`
 
 export const WorksContent = styled.div`
     width: 100%;
-    height: 150px;
-    position: relative;
-    transform: translateY(185px);
-    padding: 1rem;
+    min-height: 150px;
+    padding: 0 0.5rem;
 `
 
 export const WorksDescription = styled.p`
@@ -75,17 +55,16 @@ export const WorksDescription = styled.p`
 `
 
 export const WorksTagsContainer = styled.div`
-    position: absolute;
-    bottom: 0;
+    padding-bottom: 0.5rem;
 `
 
 export const WorksTags = styled.div`
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: ${XS2_FONT_SIZE};
     font-weight: 500;
     color: #fff;
     background: #00BCEF;
     border-radius: 50vh;
     padding: 0.2rem 0.8rem;
-    margin: 0.2rem;
+    margin-right: 0.5rem;
 `

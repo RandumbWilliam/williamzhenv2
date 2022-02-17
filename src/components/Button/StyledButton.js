@@ -35,7 +35,7 @@ export const Btn = styled.button`
     outline-style: none;
   }
   &:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, ${WHITE_COLOR} 0 -3px 0 inset;
+    ${'' /* box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, ${PRIMARY_COLOR} 0 -3px 0 inset; */}
     transform: translateY(-2px);
   }
   &:active {

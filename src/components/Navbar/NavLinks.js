@@ -65,7 +65,7 @@ const NavLinksWrapper = styled.ul`
   padding: 0;
 
   li {
-    margin-right: 50px;
+    margin-left: 50px;
   }
 
   ${'' /* li:not(:last-child) {

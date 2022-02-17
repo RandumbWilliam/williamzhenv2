@@ -21,8 +21,8 @@ export const ExperienceCol = styled(Col)`
 `
 
 export const ExperienceLogo = styled.img`
-    width: 80px;
-    height: auto;
+    width: auto;
+    height: 80px;
     margin-bottom: 1.3rem;
 `
 

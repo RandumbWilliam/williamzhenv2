@@ -1,5 +1,10 @@
 import { Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
+import { LG_PADDING } from '../../components/Common/StyleElement';
+
+export const WorkRow = styled(Row)`
+    padding-top: ${LG_PADDING};
+`
 
 export const WorksFilterBtnsContainer = styled(Row)`
     margin: 5rem 0;

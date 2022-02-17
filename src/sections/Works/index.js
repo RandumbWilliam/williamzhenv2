@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container } from 'react-bootstrap';
 import Missing from '../../assets/works/missing.gif';
 import { Section, Title } from '../../components/Common/PageElement';
 import WorksCard from '../../components/WorksCard';
 import Slider from './Slider';
-import { WorksBtn } from './StyledWorks';
+import { WorkRow, WorksBtn } from './StyledWorks';
 import { Tags, WorksItems } from './WorksItems';
 
 
@@ -16,7 +16,7 @@ const Works = () => {
         if (active === "everything") {
             setFilteredWorksItems(WorksItems)
         } else {
-            setFilteredWorksItems(WorksItems.filter((item) => { return (item.filter === active) }))
+            setFilteredWorksItems(WorksItems.filter((item) => { return (item.filter.includes(active)) }))
         }
     }, [active])
 
@@ -37,7 +37,7 @@ const Works = () => {
                         <WorksBtn key={tag.id} onClick={() => { setActive(tag.id) }} active={active === tag.id ? true : false}>{tag.name}</WorksBtn>
                     ))}
                 </Slider>
-                <Row>
+                <WorkRow>
                     {filteredWorksItems.length === 0 ?
                         <Col style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", height: "300px" }}>
                             <img src={Missing} width={200} alt="missing-bugcat" />
@@ -58,7 +58,7 @@ const Works = () => {
                         </>
                     }
 
-                </Row>
+                </WorkRow>
             </Container>
         </Section>
     );

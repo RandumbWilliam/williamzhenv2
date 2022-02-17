@@ -1,3 +1,4 @@
+export const XS2_FONT_SIZE = "0.5rem";
 export const XS_FONT_SIZE = "0.75rem";
 export const SM_FONT_SIZE = "0.875rem";
 export const DEFAULT_FONT_SIZE = "1rem";
